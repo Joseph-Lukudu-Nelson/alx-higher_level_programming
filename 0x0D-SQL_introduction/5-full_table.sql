@@ -1,2 +1,2 @@
 -- a script that descibe a tabLE
-DESC first_table;
+SHOW CREATE TABLE first_table;
