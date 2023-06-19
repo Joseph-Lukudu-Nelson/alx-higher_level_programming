@@ -1,13 +1,13 @@
 #!/usr/bin/node
-module.exports = class Rectangle {
+/**
+ * Check the parameters provided
+ */
+class Rectangle {
   constructor (w, h) {
-    if (w <= 0 || h <= 0 || typeof w !== 'number' || typeof h !== 'number') {
-      // create an empty object if w or h is not a positive integer
-      this.width = 0;
-      this.height = 0;
-    } else {
+    if (typeof w === 'number' && w > 0 && typeof h === 'number' && h > 0) {
       this.width = w;
       this.height = h;
     }
   }
-};
+}
+module.exports = Rectangle;
